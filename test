@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <body>
+    <script>
+      fetch("secure.tessituranetwork.com/api/account/login/reset", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: "johnny_scott@hotmail.com" }),
+        mode: "cors",
+        credentials: "include" // send cookies if any exist
+      }).then(r => console.log("status", r.status))
+        .catch(e => console.error(e));
+    </script>
+  </body>
+</html>
